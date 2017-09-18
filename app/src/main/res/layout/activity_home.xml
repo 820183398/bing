@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/home_tab_height" />
+
+    <com.nleaves.study.views.TabControlView
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_tab_height"
+        android:layout_gravity="bottom"
+        android:background="?attr/qmui_list_item_bg_with_border_top"
+        android:orientation="horizontal">
+
+        <com.nleaves.study.views.TabItemView
+            android:id="@+id/tab_note"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabItemImage="@drawable/tabbar_home_selector"
+            app:tabItemText="笔记制作" />
+
+        <com.nleaves.study.views.TabItemView
+            android:id="@+id/tab_deal"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabItemImage="@drawable/tabbar_home_selector"
+            app:tabItemText="交易平台" />
+
+        <com.nleaves.study.views.TabItemView
+            android:id="@+id/tab_coach"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabItemImage="@drawable/tabbar_home_selector"
+            app:tabItemText="在线辅导" />
+
+        <com.nleaves.study.views.TabItemView
+            android:id="@+id/tab_me"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabItemImage="@drawable/tabbar_home_selector"
+            app:tabItemText="我的" />
+
+    </com.nleaves.study.views.TabControlView>
+</FrameLayout>
